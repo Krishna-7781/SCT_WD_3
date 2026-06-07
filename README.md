@@ -64,7 +64,7 @@ QUIZ-ARENA/
 
 ## 🌐 Live Demo
 
-GitHub Pages: https://krishna-7781.github.io/SCT_WD_3/
+GitHub Pages:  https://krishna-7781.github.io/SCT_WD_3/
 
 ## 📁 Repository
 
