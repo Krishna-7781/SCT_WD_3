@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Arena | Ultimate Knowledge Challenge</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="bg-orb orb1"></div>
+    <div class="bg-orb orb2"></div>
+    <div class="bg-orb orb3"></div>
+
+    <div class="container">
+
+        <!-- START SCREEN -->
+
+        <section id="start-screen" class="screen active">
+
+            <div class="hero-card">
+
+                <div class="hero-badge">
+                    WELCOME TO
+                </div>
+
+                <h1 class="main-title">
+                    QUIZ ARENA
+                </h1>
+
+                <p class="tagline">
+                    Ultimate Knowledge Challenge
+                </p>
+
+                <input type="text"
+                    id="player-name"
+                    placeholder="Enter Your Name">
+
+                <h3 class="category-heading">
+                    Select Your Challenge
+                </h3>
+
+                <div class="categories">
+
+                    <button class="category-btn selected"
+                        data-category="html">
+
+                        <span class="category-icon">🌐</span>
+
+                        <span>HTML</span>
+
+                    </button>
+
+                    <button class="category-btn"
+                        data-category="css">
+
+                        <span class="category-icon">🎨</span>
+
+                        <span>CSS</span>
+
+                    </button>
+
+                    <button class="category-btn"
+                        data-category="javascript">
+
+                        <span class="category-icon">⚡</span>
+
+                        <span>JavaScript</span>
+
+                    </button>
+
+                </div>
+
+                <button id="start-btn"
+                    class="start-btn">
+
+                    Start Challenge
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- QUIZ SCREEN -->
+
+        <section id="quiz-screen" class="screen">
+
+            <div class="quiz-card">
+
+                <div class="quiz-top">
+
+                    <div class="player-box">
+                        👤 <span id="player-display"></span>
+                    </div>
+
+                    <div class="score-box">
+                        🏆 Score:
+                        <span id="score">0</span>
+                    </div>
+
+                </div>
+
+
+
+                <div class="progress-wrapper">
+
+                    <div class="progress-bar">
+
+                        <div id="progress-fill"
+                            class="progress-fill">
+                        </div>
+
+                    </div>
+
+                    <div id="question-counter"
+                        class="question-counter">
+
+                        Question 1 / 10
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="timer-section">
+
+                    <div class="timer-circle">
+
+                        <span id="time-left">
+                            15
+                        </span>
+
+                    </div>
+
+                    <p class="timer-label">
+                        Seconds Left
+                    </p>
+
+                </div>
+
+
+
+                <div class="question-box">
+
+                    <h2 id="question">
+                        Question appears here...
+                    </h2>
+
+                </div>
+
+
+
+                <div id="options-container"
+                    class="options-container">
+
+                </div>
+
+
+
+                <button id="next-btn"
+                    class="next-btn hidden">
+
+                    Next Question →
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RESULT SCREEN -->
+
+        <section id="result-screen" class="screen">
+
+            <div class="result-card">
+
+                <div class="trophy">
+                    🏆
+                </div>
+
+                <h1>
+                    Challenge Complete!
+                </h1>
+
+                <h2 id="final-message">
+                    Great Work!
+                </h2>
+
+                <div class="result-details">
+
+                    <div class="result-item">
+
+                        <span>Player</span>
+
+                        <strong id="result-player">
+                        </strong>
+
+                    </div>
+
+                    <div class="result-item">
+
+                        <span>Score</span>
+
+                        <strong id="final-score">
+                        </strong>
+
+                    </div>
+
+                    <div class="result-item">
+
+                        <span>High Score</span>
+
+                        <strong id="high-score">
+                        </strong>
+
+                    </div>
+
+                </div>
+
+                <button id="restart-btn"
+                    class="restart-btn">
+
+                    Play Again
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
